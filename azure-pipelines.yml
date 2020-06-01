@@ -1,16 +1,13 @@
-stages:
-  - stage: a
-  
 trigger:
   - '*'
   
 pool:
-  vmImage: 'ubuntu-16.04'
-  demands:
-  - npm
+    vmImage: 'ubuntu-16.04'
+    demands:
+    - npm
   
-variables:
-  buildConfiguration: 'Release'
+  variables:
+    buildConfiguration: 'Release'
   
   steps:
   - task: UseDotNet@2
